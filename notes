@@ -1,0 +1,69 @@
+create project
+
+scala> def mm(v: String): String = {v}
+mm: (v: String)String
+
+scala> mm("hola")
+res0: String = hola
+
+scala> def mm(v: String): String = {v + "mundo"}
+mm: (v: String)String
+
+scala> mm("hola")
+res1: String = holamundo
+
+scala> def sum2(x: Int, y: Int): Int = {x+y}
+sum2: (x: Int, y: Int)Int
+
+scala> sum2(2,3)
+res2: Int = 5
+
+scala> def sum2(x: Int, y: Int, z: Int=4): Int = {x+y+z}
+sum2: (x: Int, y: Int, z: Int)Int
+
+scala> sum2(4,5)
+res3: Int = 13
+
+scala> sum2(4,5,1)
+res4: Int = 10
+
+scala> def validate(x: Int, y: Int): Int = {
+     | if (x>y) 
+     | x
+     | else
+     | y
+     | }
+validate: (x: Int, y: Int)Int
+
+scala> validate(2,3)
+res5: Int = 3
+
+scala> def ra = 10
+ra: Int
+
+scala> def pi = 3.14
+pi: Double
+
+scala> def sumOfSquares(x:Double, y:Double) = square(x) + square(y)
+<console>:7: error: not found: value square
+       def sumOfSquares(x:Double, y:Double) = square(x) + square(y)
+                                              ^
+<console>:7: error: not found: value square
+       def sumOfSquares(x:Double, y:Double) = square(x) + square(y)
+                                                          ^
+
+scala> def square(x: Double) = x*x
+square: (x: Double)Double
+
+scala> def sumOfSquares(x:Double, y:Double) = square(x) + square(y)
+sumOfSquares: (x: Double, y: Double)Double
+
+scala> sumOfSquares(3,4)
+res7: Double = 25.0
+
+scala> sumOfSquares(3,4+1)
+res9: Double = 34.0
+
+scala> def abs(x: Int): Int={if (x > 0) x else -x}
+abs: (x: Int)Int
+

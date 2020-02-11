@@ -1,0 +1,11 @@
+ls
+mkdir -p src/main/scala
+compile
+run
+reload
+run
+test
+~test
+def mm(v: String): String={
+    v
+console
